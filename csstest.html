@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Change Me</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="dcterms.rightsHolder" content="Name of Copyright Holder" />
+<meta name="dcterms.dateCopyrighted" content="2012" />
+<style>
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu li {
+    float: left;
+}
+
+li a, .menubtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .menubtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.menuContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menuContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menuContent a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .menuContent {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div id="menu">
+<ul>
+	<li><a href="./">Home</a></li>
+	<li class="dropdown">
+		<a href="javascript:void(0)">Notes</a>
+		<div class="menuContent">
+			<a href="w2notes.html">Week 2</a>
+			<a href="w3notes.html">Week 3</a>
+			<a href="w4notes.html">Week 4</a>
+		</div>
+	</li>
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="menubtn">Assignments</a>
+		<div class="menuContent">
+			<a href="resume.html">Resume</a>
+			<a href="table.html">Table</a>
+		</div>
+	</li>
+</ul>
+</div>
+<p style="text-align:center;"><a href="./">Return to homepage</a></p>
+<div id="validator">
+<a href="http://validator.w3.org/nu/?doc=https://nbtl.mesacc.edu/dkirby/template.html">
+HTML 5 Validation</a>
+</div>
+</body>
+</html>
