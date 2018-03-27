@@ -1,0 +1,37 @@
+.form
+{
+
+	width: 85%;
+	margin: 20px auto;
+	max-width: 1200px;
+	color: #e7e6e6;
+
+	border: 1px solid #CCC;
+	border-radius: 1em;
+}
+
+.form__label
+{
+	display: inline-block;
+	padding: 10px 5px;
+	width: 20%;
+	text-align: right;
+}
+
+.form__text, .form__textarea
+{
+	width: 55%;
+}
+
+.form__textarea
+{
+	vertical-align: text-top;
+	height: 150px;
+}
+
+.form__button
+{
+	margin: 10px auto;
+	padding: 5px auto;
+	width: 200px;
+}

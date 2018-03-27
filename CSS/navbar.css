@@ -1,0 +1,27 @@
+.active
+{
+	background-color: #a05555;
+}
+
+.navbar
+{
+	overflow: hidden;
+    background-color: #543f3f;
+	margin: auto;
+	padding: 5px 10px;
+	position: relative;
+}
+
+.navbar__link
+{
+    float: left;
+    color: #e7e6e6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar__link:hover
+{
+    color: #ffffff;
+}
