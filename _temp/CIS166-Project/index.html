@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+		CIS166AA: index.html
+		Author: Dylan Kirby
+		Date: 	2018-03-25
+	-->
+	<title>Parents as Teachers</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="CSS/styles.css" type="text/css"/>
+	<link rel="stylesheet" href="CSS/navbar.css" type="text/css"/>
+	<link rel="stylesheet" href="CSS/form.css" type="text/css"/>
+	<script src="JS/modernizr.custom.05819.js"></script>
+	<style>
+		.form__text
+		{
+			width: 40%
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<a class="navbar__link" href="#">Home</a>
+			<a class="navbar__link" href="QA.html">Q/A Column</a>
+			<a class="navbar__link" href="resources.html">Resources</a>
+			<a class="navbar__link" href="contactform.html">Contact Me</a>
+		</div>
+		<div class="header">
+			<div class="header__title"><h1>Parents as Teachers</h1></div>
+			<div class="header__text"><p>A Resource to Inform Parents About Raising Productive Children</p></div>
+		</div>
+		<div class="post">
+			<p>Temporary space for Chapters 2 and 3 assignment</p>
+			<div class="form">
+				<form>
+					<fieldset>
+						<legend>Calculate Your BMI</legend>
+						<div>
+							<label class="form__label" for="height">Height:</label>
+							<input class="form__text" type="text" id="height"/>
+							<input class="form__radio" type="radio" name="height" id="inches" value="inches" checked> Inches
+							<input class="form__radio" type="radio" name="height" id="centimeters" value="centimeters"> Centimeters
+						</div>
+						<br>
+						<div>
+							<label class="form__label" for="weight">Weight:</label>
+							<input class="form__text" type="text" id="weight"/>
+							<input class="form__radio" type="radio" name="weight" id="pounds" value="pounds" checked> Pounds
+							<input class="form__radio" type="radio" name="weight" id="kilograms" value="kilograms"> Kilograms
+						</div>
+						<div class="form__button"><input type="button" id="submit" value="Calculate"/></div>
+						<p id="bmi"></p>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		function calcBMI()
+		{
+			var height = 0;
+			var weight = 0;
+			var bmi = 0;
+
+			if (document.getElementById("inches").checked) //converts to meters if inches
+			{
+				height = document.getElementById("height").value * 1; //ensures numeric value
+				height = height * 0.0254;
+			}
+			else if (document.getElementById("centimeters").checked) //converts cm to m
+			{
+				height = document.getElementById("height").value * 1; //ensures numeric value
+				height = height * 0.01;
+			}
+
+			if (document.getElementById("pounds").checked) //converts lbs to kg
+			{
+				weight = document.getElementById("weight").value * 1;
+				weight = weight * 0.453592;
+			}
+			else if (document.getElementById("kilograms").checked)
+			{
+				weight = document.getElementById("weight").value * 1;
+			}
+
+			bmi = weight / (height * height);
+
+			document.getElementById("bmi").innerHTML = "Your BMI is " + bmi.toFixed(1) + ".";
+			document.getElementById("height").value = "";
+			document.getElementById("weight").value = "";
+		}
+
+		var submitButton = document.getElementById("submit");
+		if (submitButton.addEventListener) {
+			submitButton.addEventListener("click", calcBMI, false);
+		} else if (submitButton.attachEvent) {
+			submitButton.attachEvent("onclick", calcBMI);
+		}
+	</script>
+</body>
+</html>

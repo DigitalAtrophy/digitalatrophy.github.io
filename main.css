@@ -1,0 +1,13 @@
+body
+{
+    background-color: #fffbf1;
+    /*max-width: none;*/
+}
+
+
+.w3-card, .w3-card-2, .w3-card-4 {background-color: #ffe2a3;}
+
+.headshot
+{
+    width: 100%;
+}

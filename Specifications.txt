@@ -1,0 +1,18 @@
+Users should be able to:
+*Learn about New Carpa Collective; who they are and what they do
+*View a list of upcoming events
+*View a calendar of events and be able to subscribe to it
+*Submit a form to receive more information from New Carpa Collective
+*View information on New Carpa Collective's members
+
+New Carpa Collective should be able to:
+*Automatically receive an email containing form information from users
+*Add events to calendar, which also updates upcoming events list
+*Add bios for new members
+
+What I have left to do:
+*Lookup calendar subscription service
+*"Contact Us" form that sends email automatically
+*Way to simulate dynamic website, but create static pages
+
+Logo color: #ffb71b

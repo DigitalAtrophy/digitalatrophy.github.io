@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+</head>
+<body class="w3-content" style="max-width: none">
+
+<!-- Navbar -->
+<div class="w3-bar w3-theme w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-theme-l3 w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fas fa-bars"></i></a>
+    <a href="./" class="w3-bar-item w3-button w3-hover-theme-l3 w3-padding-large"><i class="fas fa-home fa-lg"></i></a> <!--change to icon with text as backup-->
+    <a href="javascript:void(0);" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-theme-l3 w3-theme-l3">Who We Are</a> <!--links to bio pages-->
+    <a href="events.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-theme-l3">Events</a><!--links to event page-->
+    <a href="javascript:void(0);" onclick="document.getElementById('contact').style.display='block'" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-theme-l3">Contact Us</a>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="javascript:void(0);" class="w3-bar-item w3-button w3-hover-theme-l3 w3-padding-large w3-theme-l3">Who We Are</a>
+    <a href="events.html" class="w3-bar-item w3-button w3-hover-theme-l3 w3-padding-large">Events</a>
+    <a href="javascript:void(0);" onclick="document.getElementById('contact').style.display='block'" class="w3-bar-item w3-button w3-hover-theme-l3 w3-padding-large">Contact Us</a>
+</div>
+
+
+
+<!-- Header -->
+<div class="w3-container w3-black w3-center">
+  <div class="w3-center w3-margin"><img src="Logos/banner.png" alt="New Carpa Collective" class="w3-image" style="width:80%"></div>
+</div>
+
+
+<!-- Modal -->
+<div id="contact" class="w3-modal">
+    <div class="w3-modal-content w3-card-4" style="max-width:800px">
+
+      <!--<div class="w3-center"><br>
+        <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+      </div>-->
+
+      <form class="w3-container" action="/action_page.php" method="post">
+        <div class="w3-section">
+            <p><input id="name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input id="email" class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input id="subject" class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><textarea id="message" class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea></p>
+            <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('contact').style.display='none'" type="button" class="w3-button w3-theme">Cancel</button> 
+      </div>
+
+    </div>
+</div>
+
+<!-- Bio Cards -->
+
+<div class="w3-row-padding w3-margin w3-center">
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+           <div class="w3-container">
+               <p>Ralph Fiennes</p>
+           </div>
+            <img src="Images/Headshots/Voldemort.jpg" alt="Voldemort" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo1')" style="width:100%">
+                <p>This is Voldemort.</p>
+            </div>
+            <div id="Demo1" class="w3-hide w3-container w3-theme-l4">
+                <p>He's the bad guy.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+            <div class="w3-container">
+               <p>Domhnall Gleeson</p>
+           </div>
+            <img src="Images/Headshots/Bill%20Weasley.jpg" alt="Bill Weasley" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo2')" style="width:100%">
+                <p>This is Bill Weasley.</p>
+            </div>
+            <div id="Demo2" class="w3-hide w3-container w3-theme-l4">
+                <p>He is Ron's oldest brother. Maybe?</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+            <div class="w3-container">
+               <p>Clémence Poésy</p>
+           </div>
+            <img src="Images/Headshots/Fleur%20Delacour.jpg" alt="Fleur Delacour" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo3')" style="width:100%">
+                <p>This is Fleur Delacour.</p>
+            </div>
+            <div id="Demo3" class="w3-hide w3-container w3-theme-l4">
+                <p>I think she is one of the champions from Goblet for Fire. She also marries Bill. And they both die. Spoiler alert.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+            <div class="w3-container">
+               <p>Michael Gambon</p>
+           </div>
+            <img src="Images/Headshots/Dumbledore.jpg" alt="Dumbledore" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo4')" style="width:100%">
+                <p>This is Dumbledore.</p>
+            </div>
+            <div id="Demo4" class="w3-hide w3-container w3-theme-l4">
+                <p>Snape kills him.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+            <div class="w3-container">
+                <p>Daniel Radcliffe</p>
+            </div>
+            <img src="Images/Headshots/Harry.jpg" alt="Harry" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo5')" style="width:100%">
+                <p>This is Harry.</p>
+            </div>
+            <div id="Demo5" class="w3-hide w3-container w3-theme-l4">
+                <p>He lived, then died, then lived. And probably dies one last time.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+            <div class="w3-container">
+                <p>Emma Watson</p>
+            </div>
+            <img src="Images/Headshots/Hermione.jpg" alt="Hermione" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo6')" style="width:100%">
+                <p>This is Hermione.</p>
+            </div>
+            <div id="Demo6" class="w3-hide w3-container w3-theme-l4">
+                <p>I'm pretty sure no one knows how to pronounce her name.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+            <div class="w3-container">
+                <p>Evanna Lynch</p>
+            </div>
+            <img src="Images/Headshots/Luna%20Lovegood.jpg" alt="Luna Lovegood" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo7')" style="width:100%">
+                <p>This is Luna Lovegood.</p>
+            </div>
+            <div id="Demo7" class="w3-hide w3-container w3-theme-l4">
+                <p>She comes out of nowhere to become a somewhat prominent character.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+            <div class="w3-container">
+                <p>Rupert Grint</p>
+            </div>
+            <img src="Images/Headshots/Ron.jpg" alt="Ron" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo8')" style="width:100%">
+                <p>This is Ron Weasley.</p>
+            </div>
+            <div id="Demo8" class="w3-hide w3-container w3-theme-l4">
+                <p>He has no soul, which is probably handy against dementors.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3 w3-section">
+        <div class="w3-card-2">
+            <div class="w3-container">
+                <p>Alan Rickman</p>
+            </div>
+            <img src="Images/Headshots/Snape.jpg" alt="Snape" class="w3-image headshot">
+            <div class="w3-container w3-btn w3-hover-shadow" onclick="myFunction('Demo9')" style="width:100%">
+                <p>This is Snape.</p>
+            </div>
+            <div id="Demo9" class="w3-hide w3-container w3-theme-l4">
+                <p>You either love him or hate him; there is no middle.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Card -->
+<hr>
+<div class="w3-card-2 w3-margin w3-center">
+  <div class="w3-container">
+  <h2>About the Collective</h2>
+  <p>All about everything. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+
+
+<!-- Calendar -->
+<div class="w3-card-2 w3-margin w3-center">
+        
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-16">
+        <!--fixme: change to applicable social media links-->
+        <i class="fab fa-facebook w3-hover-opacity"></i>
+        <i class="fab fa-instagram w3-hover-opacity"></i>
+        <i class="fab fa-youtube w3-hover-opacity"></i>
+        <!--<i class="fab fa-snapchat w3-hover-opacity"></i>
+        <i class="fab fa-pinterest-p w3-hover-opacity"></i>-->
+        <i class="fab fa-twitter w3-hover-opacity"></i>
+        <!--<i class="fab fa-linkedin-in w3-hover-opacity"></i>-->
+     </div>
+
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Closing modal
+var modal = document.getElementById('contact');
+    
+window.onclick = function(event)
+{
+    if (event.target == modal)
+        modal.style.display = "none";
+}
+
+// SLideshow controls
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+// Opens accordions
+function myFunction(id) {
+var x = document.getElementById(id);
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-black", "w3-red");
+} else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-red", "w3-black");
+}
+}
+</script>
+</body>
+</html>
