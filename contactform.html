@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+		CIS166AA: contactform.html
+		Author: Dylan Kirby
+		Date: 	2018-09-10
+	-->
+	<title>Submit Question</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="CSS/styles.css" type="text/css"/>
+	<link rel="stylesheet" href="CSS/navbar.css" type="text/css"/>
+	<link rel="stylesheet" href="CSS/form.css" type="text/css"/>
+	<script src="JS/modernizr.custom.05819.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<a class="navbar__link" href="index.html">Home</a>
+			<a class="navbar__link" href="QA.html">Q/A Column</a>
+			<a class="navbar__link" href="resources.html">Resources</a>
+			<a class="navbar__link active" href="#">Contact Me</a>
+		</div>
+		<div class="header">
+			<div class="header__title"><h1>Submit a Question</h1></div>
+			<div class="header__text"><p></p></div>
+		</div>
+		<div class="form">
+			<form action="#" method="post">
+				<div>
+					<label class="form__label" for="name">Name:</label>
+					<input class="form__text" type="text" id="name" name="user-name"/>
+				</div>
+				<div>
+					<label class="form__label" for="email">Email:</label>
+					<input class="form__text" type="email" id="email" name="user-email"/>
+				</div>
+				<div>
+					<label class="form__label" for="question">Question:</label>
+					<textarea class="form__textarea" id="question" name="user-question"></textarea>
+				</div>
+				<div class="form__button"><input type="submit" value="Submit your question"/></div>
+			</form>
+		</div>
+	</div>	
+</body>
+</html>

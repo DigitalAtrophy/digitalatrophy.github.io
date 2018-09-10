@@ -1,0 +1,40 @@
+body
+{
+	background-color: #bebbbb;
+	font-family: Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+.container
+{
+	position: relative;
+	background-color: #453434;
+	width: 85%;
+	max-width: 1200px;
+	min-height: 1000px;
+	margin: auto;
+	color: #e7e6e6;
+}
+
+.post
+{
+	position: relative;
+	margin: 20px;
+	width: 90%;
+	color: #e7e6e6;
+}
+
+.header
+{
+	position: relative;
+	background-color: #543f3f;
+	max-width: 1200px;
+	padding: 10px;
+	text-align: center;
+}
+
+.list
+{
+	position: relative;
+	margin: 20px 50px;
+	width: 90%;
+}
