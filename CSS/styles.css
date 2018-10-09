@@ -38,3 +38,13 @@ body
 	margin: 20px 50px;
 	width: 90%;
 }
+
+a:link, a:visited
+{
+	color: #e7e6e6;
+}
+
+a:hover
+{
+	color: #db7474;
+}
